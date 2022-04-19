@@ -1,35 +1,24 @@
 package vv;
 
 public class StudentInfo {
-	String name;
-	int salary;
-	
-	//-----------------------------------------------
-	public StudentInfo() {
-		// TODO Auto-generated constructor stub
-		System.out.println("This is default constructor;");
-	}
 	
 	
-	
-	//--------------------------------------------------
-	public StudentInfo(String sname) {
-		// TODO Auto-generated constructor stub
-		name=sname;
-		
-		
-	}
-	
-	
-	
-	//-------------------------------------------------
-	public StudentInfo(String sname,int ssalary) {
-		// TODO Auto-generated constructor stub
-		name=sname;
-		salary=ssalary;
+	static int FindPalindrome(int a) {
+		int n1=0;
+		int n2=1;
+		int n3=0;
+		for(int i=0;i<a;i++) {
+			n3=n1+n2;
+			System.out.println(n1);
+			n1=n2;
+			n2=n3;
+			
+			
+			
+		}
+		return 0;
 		
 	}
-	
 	
 	
 
