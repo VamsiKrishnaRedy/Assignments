@@ -1,12 +1,11 @@
 package vv;
 
- class StudentInfo extends cat {
+ class StudentInfo  {
 	
-	
-	void play() {
-		System.out.println("Playing...");
-		
-		
+	int square(int r) {
+		int res=r*r;
+		return res;
+		 
 	}
 	
 	
