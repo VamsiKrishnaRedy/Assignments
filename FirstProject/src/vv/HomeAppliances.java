@@ -1,20 +1,31 @@
 package vv;
 
- class StudentInfo  {
-	
-	 int add(int a,int b) {
-		System.out.println("Javatpoint");
-		return a+b;
+ public class HomeAppliances  {
+	 
+	 public static String name;
+	 static String address;
+	 private static int age;
+	 protected static int empid;
+	 
+	 public static void main(String[] args) {
+		 
+		 name="Vamsi";
+		 address="Hyd";
+		 age=21;
+		 empid=121;
+		
+		 System.out.println(name);
+		 System.out.println(address);
+		 System.out.println(age);
+		 System.out.println(empid);
 		
 	}
-	static int add(int a,int b,int c) {
-		return a+b;
-		
-	}
+	 
 	
-	static void run() {
-		System.out.println("Running....");
-	}
-	
+	 
+	 
+
+
+
 
 }
