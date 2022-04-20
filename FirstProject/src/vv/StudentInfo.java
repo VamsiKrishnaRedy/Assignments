@@ -2,12 +2,19 @@ package vv;
 
  class StudentInfo  {
 	
-	int square(int r) {
-		int res=r*r;
-		return res;
-		 
+	 int add(int a,int b) {
+		System.out.println("Javatpoint");
+		return a+b;
+		
+	}
+	static int add(int a,int b,int c) {
+		return a+b;
+		
 	}
 	
+	static void run() {
+		System.out.println("Running....");
+	}
 	
 
 }
