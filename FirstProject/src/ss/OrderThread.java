@@ -3,15 +3,13 @@ package ss;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class OrderThread extends Thread {
+public class OrderThread implements Test {
 	
-	CustomerThread t;  
-	public OrderThread(CustomerThread t, String tName) {
-		super(tName);
-		this.t=t;  
-		
+	@Override
+	public String say(String name) {
+		// TODO Auto-generated method stub
+		return "Your have ordered "+name;
 	}
-	public void run(){  
-		t.printTable(100);  
-	}  
+	
+	
 }
