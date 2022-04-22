@@ -1,18 +1,20 @@
 package ss;
 
+interface Addable{  
+    int add(int a,int b);  
+}  
 
-public class EmployeeThread extends Thread{
 
-	CustomerThread t;  
-	public EmployeeThread(CustomerThread t, String threadName) {
-		
-		super(threadName);
-		this.t=t;
-		
-	}
-	public void run(){  
-		t.printTable(5);  
-	}  
+public class EmployeeThread {
 
+	
+	 public static void main(String[] args) {  
+		 Addable ad1=(a,b)->(a+b);  
+	        System.out.println(ad1.add(10,20));  
+	          
+	        // Multiple parameters with data type in lambda expression  
+	        Addable ad2=(int a,int b)->(a+b);  
+	        System.out.println(ad2.add(100,200));   
+	    }  
 
 }
