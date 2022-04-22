@@ -1,21 +1,17 @@
 package ss;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class OrderThread extends Thread {
 	
-	@Override
-	public void run() {
+	CustomerThread t;  
+	public OrderThread(CustomerThread t, String tName) {
+		super(tName);
+		this.t=t;  
 		
-		try {
-			Thread.sleep(200);
-		} catch (InterruptedException e) {
-			
-		}
-		
-		for(int i=0;i<10;i++) {
-			System.out.println(i);
-		}
-		super.run();
 	}
-
-
+	public void run(){  
+		t.printTable(100);  
+	}  
 }

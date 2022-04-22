@@ -1,22 +1,20 @@
 package ss;
 
-public class CustomerThread implements Runnable {
+public class CustomerThread  {
 
 	
-	@Override
-	public void run() {
-		
-		try {
-			Thread.sleep(200);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		for(int i=0;i<10;i++) {
-			System.out.println(i*100);
-		}
-		
+	void printTable(int n){//method not synchronized 
+		System.out.println(Thread.currentThread().getName()+" has entered printable");
+
+		synchronized(this){ //doctors cabin
+			for(int i=1;i<=5;i++){  
+				System.out.println(Thread.currentThread().getName()+"--"+n*i);  
+				try{  
+					Thread.sleep(400);  
+				}catch(Exception e){System.out.println(e);}  
+			}  
+
+		}  
 	}
 
 }

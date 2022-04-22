@@ -1,17 +1,18 @@
 package ss;
 
 
-public class EmployeeThread {
+public class EmployeeThread extends Thread{
 
-	public static void main(String[] args) {
-		OrderThread order=new OrderThread();
-		order.start();
+	CustomerThread t;  
+	public EmployeeThread(CustomerThread t, String threadName) {
 		
-		CustomerThread customer=new CustomerThread();
-		Thread t1=new Thread(customer);
-		t1.start();
+		super(threadName);
+		this.t=t;
 		
-
 	}
+	public void run(){  
+		t.printTable(5);  
+	}  
+
 
 }
