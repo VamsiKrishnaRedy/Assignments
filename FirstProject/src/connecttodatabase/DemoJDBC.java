@@ -8,9 +8,13 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 public class DemoJDBC {
-	
+	static String retry="No";
 	public static void main(String[] args) {
 		DemoJDBC d1=new DemoJDBC();
+		
+		do {
+			
+		
 		int choice=DemoJDBC.Menu();
 		switch (choice) {
 		case 1: {
@@ -31,6 +35,9 @@ public class DemoJDBC {
 		}
 		
 		}
+		
+		
+		}while(retry!="No");
 	
 	}
 	
