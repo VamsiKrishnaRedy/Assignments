@@ -14,7 +14,6 @@ public class DemoJDBC {
 		
 		do {
 			
-		
 		int choice=DemoJDBC.Menu();
 		switch (choice) {
 		case 1: {
